@@ -27,7 +27,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-add_my_fruit = streamlit.text_input('What fruit would you like information about?','watermelon')
+add_my_fruit = streamlit.text_input('What fruit you want??','mango')
 streamlit.write('The user entered ', add_my_fruit)
 try:
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
